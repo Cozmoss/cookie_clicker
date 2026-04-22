@@ -1,10 +1,21 @@
 import "./App.css";
+import Header from "./components/Header";
+import CookieCount from "./components/CookieCount";
+import CookiePerSecond from "./components/CookiePerSecond";
+import Cookie from "./components/Cookie";
+import Shop from "./components/Shop";
 
 function App() {
 	return (
-		<main className="bg-blue-400 min-h-screen w-full grid">
-			<h1 className="text-xl text-red-500">Cookie Clicker</h1>
-		</main>
+		<>
+			<Header />
+			<main>
+				<CookieCount />
+				<CookiePerSecond />
+				<Cookie />
+				<Shop />
+			</main>
+		</>
 	);
 }
 
