@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 function CookiePerSecond() {
-	return <div></div>;
+	const [second, setSecond] = useState(0);
+	return <div className="text-white">{second}/s</div>;
 }
 
 export default CookiePerSecond;

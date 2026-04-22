@@ -9,7 +9,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main>
+			<main className="grid justify-items-center gap-5">
 				<CookieCount />
 				<CookiePerSecond />
 				<Cookie />
