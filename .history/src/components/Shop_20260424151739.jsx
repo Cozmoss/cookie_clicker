@@ -1,0 +1,14 @@
+import { useGame } from "../context/GameContext";
+
+function Shop() {
+    const { state, dispatch } = useGame();
+	return (
+		<div className="bg-white p-4 rounded-md">
+            {state.upgrades.map((upgrade) => (
+                <button key={upgrade.id} onClick={() => dispatch({type: })} className="bg-gray-300 rounded-md cursor-pointer align-middle mr-1">{upgrade.name} : {upgrade.cost}</button>
+            ))}
+		</div>
+	);
+}
+
+export default Shop;
