@@ -9,12 +9,12 @@ function Cookie() {
     function handleClick() {
         dispatch({type: "CLICK_COOKIE"});
         setIsCliked(true);
-        setTimeout(() => setIsCliked(false), 75);
+        setTimeout(() => setIsCliked(false), 100);
     }
 	return (
 		<div>
 			<button className="cursor-pointer" onClick={handleClick}>
-				<img src={cookie} alt="Cookie" className={`w-96 transition-transform duration-75 ${isCliked ? "scale-90" : "scale-100"}`} />
+				<img src={cookie} alt="Cookie" className={`transition-transform duration-`} />
 			</button>
 		</div>
 	);

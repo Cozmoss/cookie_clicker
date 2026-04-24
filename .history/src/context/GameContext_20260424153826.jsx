@@ -8,7 +8,7 @@ const initialState = {
     upgrades: [
         {id: 1, name: "Grandmother", cost: 100, cps: 1},
         {id: 2, name: "Bakery", cost: 500, cps: 10},
-        {id: 3, name: "Factory", cost: 5000, cps: 100},
+        {id: 3, name: "Factory", cost: 5000, cps: 5-00},
     ],
 }
 

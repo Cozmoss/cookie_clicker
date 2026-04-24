@@ -7,14 +7,12 @@ function Cookie() {
     const [isCliked, setIsCliked] = useState(false);
 
     function handleClick() {
-        dispatch({type: "CLICK_COOKIE"});
         setIsCliked(true);
-        setTimeout(() => setIsCliked(false), 75);
     }
 	return (
 		<div>
-			<button className="cursor-pointer" onClick={handleClick}>
-				<img src={cookie} alt="Cookie" className={`w-96 transition-transform duration-75 ${isCliked ? "scale-90" : "scale-100"}`} />
+			<button className="cursor-pointer" onClick={() => dispatch({type: "CLICK_COOKIE"})}>
+				<img src={cookie} alt="Cookie" className="w-96" />
 			</button>
 		</div>
 	);
